@@ -1,18 +1,89 @@
 html {
   box-sizing: border-box;
+  font-family: "Patua One";
+  line-height: 1.5;
+  font-size: .85em;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
 }
 
 img {
   width: 100%;
 }
 
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  margin: 1rem;
+  background-color: #f2f1ed;
+}
+
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+}
+
+.pano {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.logo {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: flex-end;
+  padding: 1rem;
+  z-index: 1;
+}
+
+header h1 img {
+  width: 14rem;
+}
+
+nav {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+a {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem;
+}
+
+main {
+  display: contents;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  background-color: pink;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin: 1rem 0 0 0;
+}
+
+h2 {
+  color: #30658d;
+}
+
+p {
+  font-family: "Georgia";
 }
