@@ -21,7 +21,8 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 1rem;
-  margin: 1rem;
+  margin: 0;
+  padding: 1rem;
   background-color: #f2f1ed;
 }
 
@@ -85,5 +86,5 @@ h2 {
 }
 
 p {
-  font-family: "Georgia";
+  font-family: Georgia;
 }
