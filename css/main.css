@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: "Patua One", sans-serif;
+  font-family: Georgia, serif;
   line-height: 1.5;
 }
 
@@ -19,6 +19,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "main main";
   grid-gap: 1rem;
   margin: 0;
   padding: 1rem;
@@ -28,6 +31,7 @@ body {
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+  grid-area: header;
 }
 
 .pano {
@@ -60,6 +64,7 @@ nav ul {
 }
 
 a {
+  font-family: "Patua One", sans-serif;
   font-size: 2rem;
   color: #fff;
   padding: 1rem;
@@ -69,7 +74,7 @@ main {
   display: contents;
   grid-column: 1 / -1;
   grid-row: 2;
-  background-color: pink;
+  grid-area: main;
 }
 
 figure {
@@ -81,6 +86,7 @@ figcaption {
 }
 
 h2 {
+  font-family: "Patua One", sans-serif;
   color: #30658d;
 }
 
